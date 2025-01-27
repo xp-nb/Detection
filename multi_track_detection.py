@@ -7,7 +7,7 @@ import cv2
 import os
 import tensorflow as tf
 import matplotlib
-
+from tensorflow.core.framework import graph_pb2
 matplotlib.use('Qt5Agg')
 import matplotlib.pyplot as plt
 from object_detection.utils import label_map_util
@@ -32,13 +32,13 @@ WINDOW_NAME = 'Pedestrian'
 WINDOW_NAME2 = "Hue histogram back projection"
 # 定义7种可用跟踪器
 OPENCV_OBJECT_TRACKERS = {
-    "csrt": cv2.TrackerCSRT_create,
-    "kcf": cv2.TrackerKCF_create,
-    "boosting": cv2.TrackerBoosting_create,
-    "mil": cv2.TrackerMIL_create,
-    "tld": cv2.TrackerTLD_create,
-    "medianflow": cv2.TrackerMedianFlow_create,
-    "mosse": cv2.TrackerMOSSE_create
+    "csrt": cv2.legacy.TrackerCSRT_create,
+    "kcf": cv2.legacy.TrackerKCF_create,
+    "boosting": cv2.legacy.TrackerBoosting_create,
+    "mil": cv2.legacy.TrackerMIL_create,
+    "tld": cv2.legacy.TrackerTLD_create,
+    "medianflow": cv2.legacy.TrackerMedianFlow_create,
+    "mosse": cv2.legacy.TrackerMOSSE_create
 }
 # 行人检测选择区域
 BORDER = [[142, 171], [101, 339], [283, 339], [296, 171]]
@@ -47,9 +47,9 @@ BORDER = [[142, 171], [101, 339], [283, 339], [296, 171]]
 
 # 将训练好的模型以及标签加载到内存中，方便使用
 def load():
-    tf.reset_default_graph()
-    od_graph_def = tf.GraphDef()
-    with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
+    tf.compat.v1.reset_default_graph()
+    od_graph_def = graph_pb2.GraphDef()
+    with tf.io.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
         serialized_graph = fid.read()
         od_graph_def.ParseFromString(serialized_graph)
         tf.import_graph_def(od_graph_def, name='')
@@ -100,9 +100,9 @@ def detect_objects(image_np, sess, detection_graph, category_index):
 # 对原始图片的处理
 def process_image(image):
     category_index = load()
-    detection_graph = tf.get_default_graph()
+    detection_graph = tf.compat.v1.get_default_graph()
     with detection_graph.as_default():
-        with tf.Session(graph=detection_graph) as sess:
+        with tf.compat.v1.Session(graph=detection_graph) as sess:
             image_process = detect_objects(image, sess, detection_graph, category_index)
             return image_process
 
@@ -194,7 +194,7 @@ def track_objects(video, object_tracker, detection_time):
             (success, boxes) = trackers.update(frame)
         if flag:
             # 重新初始化多对象跟踪器
-            trackers = cv2.MultiTracker_create()
+            trackers = cv2.legacy.MultiTracker()
             # 绘制检测识别文字
             font = cv2.FONT_ITALIC
             h, w, c = frame.shape

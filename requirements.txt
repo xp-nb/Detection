@@ -1,0 +1,18 @@
+# 基础依赖
+numpy
+# 深度学习框架
+tensorflow # Faster R-CNN 和 SSD-MobileNet 需要 TensorFlow 1.x
+protobuf==3.20.1    # TensorFlow Object Detection API 依赖
+
+# 目标检测库
+tensorflow-object-detection-api  # 安装方法见下方说明
+
+# 其他工具
+matplotlib # 用于可视化
+scipy       # 用于科学计算
+pandas     # 用于数据处理
+tqdm      # 用于进度条显示
+
+# 多目标跟踪相关
+filterpy   # 卡尔曼滤波实现
+scikit-learn # 可选，用于数据分析

@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116dd5d6-c8b4-4893-bfba-c7a330c082a6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Detection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Detection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_detection/utils/visualization_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_detection/utils/visualization_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi_object_tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_object_tracking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi_track_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_track_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_detection/utils/label_map_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_detection/utils/label_map_util.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,31 +31,6 @@
     <SUITE FILE_PATH="coverage/Detection$camshift2.coverage" NAME="camshift2 Coverage Results" MODIFIED="1544601506009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Detection$track_camshift.coverage" NAME="track_camshift Coverage Results" MODIFIED="1544601109197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Detection$foremat.coverage" NAME="foremat Coverage Results" MODIFIED="1544444646825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="multi_track_detection.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/multi_track_detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,8 +85,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="9" />
@@ -115,6 +100,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectId" id="2s1d8DnmkJOq8oB7h4ghWeBeQ4O" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -140,12 +126,17 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="power.mode.ii" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/github/repository/yolov5",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\libra\PycharmProjects\Detection\test_videos" />
@@ -156,18 +147,6 @@
       <recent name="C:\Users\libra\PycharmProjects\Detection\test_images" />
       <recent name="C:\Users\libra\PycharmProjects\Detection\faster_rcnn_inception_v2_coco_2018_01_28" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.multi_track_detection">
     <configuration name="camshift2" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -188,6 +167,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="multi_camshift_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Detection" />
@@ -207,6 +189,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="multi_track_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Detection" />
@@ -226,8 +211,11 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="multi_track_kalmon" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,12 +227,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multi_track_kalmon.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="track_camshift" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Detection" />
@@ -264,24 +254,28 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.multi_track_detection" />
-      <item itemvalue="Python.multi_track_kalmon" />
-      <item itemvalue="Python.track_camshift" />
-      <item itemvalue="Python.multi_camshift_detection" />
       <item itemvalue="Python.camshift2" />
+      <item itemvalue="Python.multi_camshift_detection" />
+      <item itemvalue="Python.multi_track_detection" />
+      <item itemvalue="Python.tes" />
+      <item itemvalue="Python.track_camshift" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.multi_track_detection" />
+        <item itemvalue="Python.tes" />
         <item itemvalue="Python.multi_camshift_detection" />
         <item itemvalue="Python.camshift2" />
         <item itemvalue="Python.track_camshift" />
-        <item itemvalue="Python.multi_track_kalmon" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -332,9 +326,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/multi_object_tracking.py">

@@ -1,6 +1,17 @@
 # Detection
 ## 基于视频的行人流量密度检测
-
+```
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal universe
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates universe
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security universe
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security multiverse
+```
 1.detection.py:通过已经训练好的Faster-Rcnn参数实现对行人的识别并标记（其中标记行人的阈值为0.7，即识别率必须达到70%）；<br>
 2.camshift2.py:利用mean-shift对已经标记的人进行目标跟踪，中间通过不断迭代更新行人目标位置并实时标记；<br>
 3.kalmon.py:借助卡尔曼滤波方式来对行人移动位置进行预测，提高目标跟踪的精度；<br>
